@@ -1,0 +1,39 @@
+﻿<Page x:Class="Itogovayaa.AdminWindow3"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Itogovayaa"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="1000"
+      Title="AdminWindow3"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes" Foreground="#FF1B794A">
+
+    <Grid Background="#FF1B794A">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="267*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="64*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="50*"/>
+            <RowDefinition Height="49*"/>
+        </Grid.RowDefinitions>
+        <Button Grid.Column="1" Content="Добавить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Width="130" Height="47" FontSize="20" Background="#FF3AB742" Click="Button_Click"/>
+        <Button Grid.Column="2" Content="Изменить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Width="130" Height="47" FontSize="20" Background="#FF3AB742" Click="Button_Click_1"/>
+        <Button Grid.Column="3" Content="Удалить" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="7" Width="130" Height="47" FontSize="20" Background="#FF3AB742" Click="Button_Click_2"/>
+        <DataGrid x:Name="grid3" Grid.Row="0" Grid.RowSpan="8" SelectionChanged="grid3_SelectionChanged"/>
+        <TextBlock Grid.ColumnSpan="4" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Text="Данные для заполнения" FontSize="23" Foreground="White"/>
+        <TextBox x:Name="login" Width="256" Height="33" FontSize="17" HorizontalAlignment="Center" Grid.Row="1" materialDesign:HintAssist.Hint="Логин: " Grid.ColumnSpan="4" Grid.Column="1" Foreground="White"/>
+        <TextBox x:Name="password" Width="256" Height="33" FontSize="17" HorizontalAlignment="Center" Grid.Row="2" materialDesign:HintAssist.Hint="Пароль: " Grid.ColumnSpan="4" Grid.Column="1" Foreground="White"/>
+        <ComboBox x:Name="chel" Width="320" Height="28" FontSize="14" HorizontalAlignment="Center" Grid.Row="3" materialDesign:HintAssist.Hint="Пользователь, к кому привязать авторизацию" Grid.ColumnSpan="4" Grid.Column="1" Foreground="Black"/>
+    </Grid>
+    
+</Page>
